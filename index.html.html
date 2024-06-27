@@ -1,0 +1,611 @@
+<html lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><script src="/alfe-was-accust-raptime-The-done-Lenountrifles-i" async=""></script>
+    <title>HBL - Internet Banking</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="icon" href="/Assets/img/favicon.png" type="image/png" media="all">
+    <link href="/Assets/css/jquery-ui.css" rel="stylesheet">
+<link href="/Assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="/Assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/Assets/css/styles.css" rel="stylesheet">
+<link href="/Assets/css/animate.css" rel="stylesheet">
+<link href="/Assets/css/loader.css" rel="stylesheet">
+<link href="/Assets/css/NewStyle.css" rel="stylesheet">
+<link href="/Assets/css/chosen.css" rel="stylesheet">
+<link href="/Assets/css/text-security.css" rel="stylesheet">
+
+    <script src="/Assets/js/jquery-3.6.0.min.js"></script>
+<script src="/Assets/js/jquery-ui.min.js"></script>
+<script src="/Assets/js/popper.min.js"></script>
+<script src="/Assets/js/bootstrap.min.js"></script>
+<script src="/Assets/js/webui.js"></script>
+<script src="/Assets/js/webdev.js"></script>
+<script src="/Assets/js/Common.js"></script>
+<script src="/Assets/js/jquery.nicescroll.min.js"></script>
+<script src="/Assets/js/jquery.scrolling-tabs.js"></script>
+<script src="/Assets/js/html2canvas.js"></script>
+
+    <script src="/Scripts/angular.min.js"></script>
+<script src="/Assets/js/Angular/angular-materialize.min.js"></script>
+<script src="/Assets/js/Angular/ngHtmlCompile.js"></script>
+<script src="/Scripts/angular-messages.js"></script>
+<script src="/Scripts/angular-sanitize.min.js"></script>
+<script src="/Scripts/ngletteravatar.min.js"></script>
+<script src="/Scripts/ng-currency.js"></script>
+<script src="/Scripts/angular-filter.min.js"></script>
+<script src="/Scripts/chosen.jquery.min.js"></script>
+<script src="/Scripts/angular-chosen.min.js"></script>
+<script src="/Scripts/mg/packages/angular-ui/mask.js"></script>
+
+    
+    <script src="/Scripts/crypto/Barrett.js"></script>
+<script src="/Scripts/crypto/BigInt.js"></script>
+<script src="/Scripts/crypto/RSA.js"></script>
+
+    <script src="/Assets/js/FireBase/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="/Assets/js/FireBase/firebase-analytics.js"></script>
+
+    <script src="/AngularJsController/Shared/Layout.js?1717619590"></script>
+    <script src="/AngularJsController/Login/Login.js?1717619590"></script>
+
+    <script src="/AngularJsController/Shared/Filters.js?1717619590"></script>
+    <script src="/AngularJsController/Shared/Functions.js?1717619590"></script>
+
+    <script type="text/javascript">
+        var IsNewSErver = true;
+        IsNewSErver = IsNewSErver;
+        var WebBaseURL = 'HTTPS://www.hblibank.com.pk/';
+        WebBaseURL = WebBaseURL;
+    </script>
+    <style>
+        #OTPHelpPopup .modal-content {
+            border: 0.25px solid;
+        }
+    </style>
+
+
+</head>
+<body onload="zoom()" class="body-b4login ng-scope" ng-app="AngularApp" ng-controller="MainController" ng-init="ProcessTermsCondition(); InitializeLayout('HTTPS://www.hblibank.com.pk/', '','010001', 'CCDC930C0ABAAC01D4620C9187A54183470BCA650049181FDC1CE87CDFC386AA5A7032AFC6730E4E2CAC3153C20C7A69190FE5728B613400DEF27B497EF447C3D7F2190985C0B51E86822169FD744E1EE89F45C54C34C9552D9A4CE6D9B4AB3B4F9A555C9B3432C8EF60E7B7516BFB6E13F3E41E1B51E00B72821A28614992C9',''); LoadPreLoginMeta({&quot;newDeviceRegCoolOffWarningMsg&quot;:&quot;To proceed with this Device registration request, HBL Digital services will remain inaccessible for next 2-Hours.&quot;,&quot;limitEnhancementCoolOffWarningMsg&quot;:&quot;To proceed with this Transaction Limit Enhancement request, HBL Digital services will remain inaccessible for next 2-Hours.&quot;,&quot;forgotPasswordCoolOffWarningMsg&quot;:&quot;To proceed with this Forgot Password request, HBL Digital services will remain inaccessible for next 2-Hours.&quot;,&quot;changeLoginIdCoolOffWarningMsg&quot;:&quot;To proceed with this Change Login ID request, HBL Digital services will remain inaccessible for next 2-Hours.&quot;,&quot;changePasswordCoolOffWarningMsg&quot;:&quot;To proceed with this Change Password request, HBL Digital services will remain inaccessible for next 2-Hours.&quot;,&quot;otpResendTime&quot;:75,&quot;otpResendIvrTime&quot;:120}); ShowDigitalAccountSelection=false;" datasqstyle="{&quot;top&quot;:0,&quot;position&quot;:&quot;static&quot;}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" style="zoom: 100%; top: 40px; position: relative;">
+    <input type="hidden" id="challenge" name="challenge" value="abc" autocomplete="off">
+    <input type="hidden" id="hdAntiForgeryToken" ng-model="AntiForgeryToken" ng-init="AntiForgeryToken=&quot;ChKc26jiR4LxH0RIo8O_nvGw6S6YX0ZGKM2tsHh__ntuSd-LnDDSNyS3r9RGi2OD9sZHwZMzt8PDCBtWtedmFS3Kus5942DpIexIV2OL8501:X4PddC5kS-TIK6SaUCuts_LEJkWIRYPO5xIubmss2p4N19nqlt1qAMe8we4MK9n25-3KaYQwH9mXfQpaeuPZXqZljV0Zi-I8cli2ZmtIDWk1&quot;" value="ChKc26jiR4LxH0RIo8O_nvGw6S6YX0ZGKM2tsHh__ntuSd-LnDDSNyS3r9RGi2OD9sZHwZMzt8PDCBtWtedmFS3Kus5942DpIexIV2OL8501:X4PddC5kS-TIK6SaUCuts_LEJkWIRYPO5xIubmss2p4N19nqlt1qAMe8we4MK9n25-3KaYQwH9mXfQpaeuPZXqZljV0Zi-I8cli2ZmtIDWk1" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+    <div style="display:none" class="ng-binding"></div>
+    <div ng-show="loading" class="preloader ng-hide" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+        <div class="display-table-loading"><div class="ng-binding"></div></div>
+    </div>
+    <div class="login-slide carousel slide" data-ride="carousel" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <div class="slides one"></div>
+                </div>
+            <div class="carousel-item active">
+                <div class="slides two"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slides four"></div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-fixed-top" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:void(0)" ng-click="ShowDigitalAccountSelection = false"><img src="/Assets/img/hbl-logo.svg"></a>
+        </div>
+        <div class="band float-right">
+            <div class="side-bar order-first order-md-first col-12 col-xl-2 ml-md-auto">
+                <div class="round-Cross-Btn ng-hide" ng-show="ShowDigitalAccountSelection" ng-confirm-click="Are you sure you want to cancel the request?" confirmed-click="ShowDigitalAccountSelection=false"><i class="fa fa-close"></i></div>
+                
+
+<div class="band float-right">
+    <div class="side-bar pre order-first order-md-first col-2 col-xl-2 ml-md-auto text-right">
+        <span class="tutorialHeader">
+           
+            <a href="#" ng-click="GetFilterlist('prelogin', true)">
+                <img src="/Assets/img/tutorial-menu-white.svg">
+                <span class="tutorials">Tutorials</span>
+            </a>
+        </span>
+        
+        <div class="service-float d-xl-block">
+
+            <span class="float-head"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <ul>
+                <li>
+
+                    <a href="#" onclick="window.open('/PreLoginService/BranchLocator')">
+                        <img src="/Assets/img/locator.svg">
+                        <span class="show-on-hover small">HBL Locator</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="window.open('/PreLoginService/DealsDiscount')">
+                        <img src="/Assets/img/deals&amp;discounts.svg">
+                        <span class="show-on-hover">Deals &amp; Discounts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="window.open('/PreLoginService/Rewards')">
+                        <img src="/Assets/img/reward-programs.svg">
+                        <span class="show-on-hover">Rewards Program</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="window.open('/PreLoginService/InstallmentPlan')">
+                        <img src="/Assets/img/installment-plan.svg">
+                        <span class="show-on-hover"> HBL Installment Plan </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="window.open('/PreLoginService/FAQs')">
+                        <img src="/Assets/img/customer-support.svg">
+                        <span class="show-on-hover">Customer Support</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.hbl.com/resources/schedule-of-bank-charges" target="_blank">
+                        <img src="/Assets/img/sobc-prelogin.svg">
+                        <span class="show-on-hover">Schedule of Bank Charges</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.hbl.com/personal/remittance/vas/proceed-realization-certificate-prc" target="_blank">
+                        <img src="/Assets/img/proceed-realization-certificate.svg" style="aspect-ratio:1;">
+                        <span class="show-on-hover">HBL ePRC</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="circle-container">
+        <div class="custom-circle"></div>
+    </div>
+    <div ng-controller="LoginController" ng-init="GetLocation(false)" class="ng-scope">
+        <div class="login-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="login main col-12 col-lg-5 col-xl-5">
+                        <div class="form off">
+                            <div class="vertical-container">
+                                <div class="vertical-cell">
+                                    <div class="disc" ng-show="!ShowDigitalAccountSelection">
+                                        <h2>You can  login to HBL InternetBanking using HBL Mobile login credentials</h2>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="form-info col-12 col-md-1 col-lg-2 col-xl-2" ng-show="!ShowDigitalAccountSelection">
+                                            <span class="log-in">Login</span>
+                                        </div>
+                                        <form name="MainForm" class="col-12 col-md-8 col-lg-9 col-xl-8 enable-ent mb-4 ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength" ng-show="!ShowDigitalAccountSelection">
+                                            <div class="form-fields">
+                                                <div class="form-group">
+                                                    <label for="Username">Login ID </label>
+<input ng-model="obj.UserName" name="Username" type="text" class="form-control forusername ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength" ng-required="true" maxlength="30" onkeypress="return alphaNumeric(event)" autocomplete="off" ng-blur="MainForm.Username.ShowValidation=true" required="required">
+<div ng-messages="MainForm.Username.$error" style="text-align: left;" ng-show="MainForm.Submited || MainForm.Username.ShowValidation" class="ValidationError  ng-active ng-hide"><!-- ngMessage: required --><p ng-message="required" class="ng-scope">This field is required</p>
+<!-- ngMessage: maxlength -->
+</div>
+                                                    <a class="btn forgot" tabindex="-1" href="/Registeration/ForgotLoginId">Forgot Login ID?</a>
+                                                </div>
+
+                                                <div class="form-group" ng-init="loadScript()">
+                                                    <div style="position:relative">
+                                                        <label for="Password">Password </label>
+<input ng-model="obj.Password" name="Password" type="password" class="form-control forpassword ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength" ng-required="true" maxlength="30" id="txtPassword" ondragstart="return false" draggable="false" readonly="" onload="init()" ng-init="StopPaste('Password')" autocomplete="off" ng-blur="MainForm.Password.ShowValidation=true" required="required">
+<div ng-messages="MainForm.Password.$error" style="text-align: left;" ng-show="MainForm.Submited || MainForm.Password.ShowValidation" class="ValidationError  ng-active ng-hide"><!-- ngMessage: required --><p ng-message="required" class="ng-scope">This field is required</p>
+<!-- ngMessage: maxlength -->
+</div>
+                                                        
+                                                        <a class="btn forgot" tabindex="-1" ng-click="forgotPasswordCoolOffActionPrompt();">Forgot Password?</a>
+                                                        <div class="form-check form-check-inline eye-container">
+                                                            <input class="form-check-input" type="checkbox" id="showPassword" value="option1" autocomplete="off">
+                                                            <label class="form-check-label open" for="inlineCheckbox1"><i class="open fa fa-eye"></i><i class="close fa fa-eye-slash"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group button-center eq-btn-size">
+                                                    <a class="btn negative" ng-click="sunsetDisclaimerMessage();" tabindex="-1">Sign up</a>
+                                                    <button type="button" class="btn submit-btn positive ng-binding" ng-click="MainForm.Submited=true; !MainForm.$invalid ?(ProcessLogin()):('')" ng-disabled="isDisable" autocomplete="off">Login</button>
+                                                </div>
+                                                
+
+
+
+                                            </div>
+                                        </form>
+
+
+
+                                        <div id="panelDigitalAccountSelection" class="security col-12 mb-5 ng-hide" ng-show="ShowDigitalAccountSelection">
+
+                                            <div class="row ">
+                                                <div class="col-12 text-center">
+                                                    <p style="padding:10%;" class="">
+                                                        Select your Preferred Digital Account
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-6 col-sm-4 col-lg-5 offset-sm-2 offset-lg-1" style="border-right: 1.5px solid #7E868A;">
+                                                    <a class="raastBtn" href="https://roshandigital.hbl.com/applyebancroshandigitalaccount">
+                                                        <img src="/Assets/img/RDA.svg" style="height:50px;width:50px;">
+                                                        <small>Roshan Digital Account</small>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-lg-5">
+                                                    <a class="raastBtn" href="https://www.hbl.com/personal/digital-banking/hbl-digital-account">
+                                                        <img src="/Assets/img/Digital Domestic Account.svg" style="height:50px;width:50px;">
+                                                        <small>
+                                                            Digital Domestic Account
+                                                        </small>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="panelOpenDigitalAccount" class="advisory security col-12" ng-show="!ShowDigitalAccountSelection">
+                                            <div class="display-table">
+                                                <div class="display-table-cell" style="padding-left: 78px !important;">
+                                                    <a href="" class="humwatan-link" ng-click="$parent.ShowDigitalAccountSelection = true">
+                                                        <span>Click here</span>
+                                                    </a> to open <span>Digital Account</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="promo mobile col-12 mt-4 mb-5">
+                                            <div class="head">
+                                                <h2>Download HBL Mobile</h2>
+                                            </div>
+
+                                            <a class="playstore" href="#" onclick="window.open('https://play.google.com/store/apps/details?id=com.hbl.android.hblmobilebanking&amp;hl=en')"> Google Play</a>
+                                            <a class="apple" href="#" onclick="window.open('https://itunes.apple.com/pk/app/hbl-mobile/id1123585628?mt=8')">App Store</a>
+                                            <a class="huawei" href="#" onclick="window.open('https://appgallery.huawei.com/app/C101066241')">HUAWEI AppGallery</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-tnc">
+            <h2><a href="#" onclick="window.open('HTTPS://www.hblibank.com.pk/Registeration/termscondition')">Terms and Conditions</a></h2>
+            <p>Copyrights © 2024 HBL All Rights Reserved</p>
+        </div>
+        <div class="tnc-popup custom-pop modal fade toggleTncDiv showEnglish ui-draggable" id="popup1" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" draggable="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ui-draggable-handle">
+                    <div class="modal-header-for-terms">
+                        <h5 class="modal-title">
+                            <div class="eng-text">Terms and Conditions</div>
+                            <div class="urdu-text">شرائط و ضوابط</div>
+                            <button class="urdu btn toggleTncBtn"><div class="urdu-text">اردو</div><div class="eng-text">English</div></button>
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <h2></h2>
+                                <div class="tnc-detail scrollby" style="position:relative !important; ">
+                                    <div ng-bind-html="LicenceData.tnc" class="ng-binding"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ngIf: postObj.TncErrorMessage!=null && postObj.IsTncErrorMessage -->
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn decline negative" style="display:block;" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn accept" style="display:none;" ng-click="UpdateTNC();">Agree</button>
+                        <button type="button" class="btn accept-dis" data-toggle="tooltip" data-placement="top" title="" data-original-title="Please scroll down to read and agree">Agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tnc-popup custom-pop modal fade toggleTncDiv showEnglish ui-draggable" id="LoginTNCPopUp" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" draggable="false" ondragstart="event.preventDefault();" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content rounded ui-draggable-handle">
+                    <div class="modal-header-for-terms">
+                        <h5 class="modal-title">
+                            <div class="eng-text">Terms and Conditions</div>
+                            <div class="urdu-text">شرائط و ضوابط</div>
+                            <button class="urdu btn toggleTncBtn"><div class="urdu-text">اردو</div><div class="eng-text">English</div></button>
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="tnc-detail scrollby">
+                            <div ng-bind-html="postedObj.LoginTNCHtml" class="ng-binding"></div>
+                        </div>
+                        <!-- ngIf: postedObj.TncErrorMessage!=null && postedObj.IsTncErrorMessage -->
+                    </div>
+                    <div class="modal-footer rounded-bottom">
+                        <button type="button" class="btn decline negative" style="display:block;" data-dismiss="modal" ng-click="UpdateLoginTNC('0');">Later</button>
+                        <button type="button" class="btn accept positive" style="display:none;" ng-click="UpdateLoginTNC('1');">Agree</button>
+                        <button type="button" class="btn  accept-dis positive" data-toggle="tooltip" data-placement="top" title="" data-original-title="Please scroll down to read and agree">Agree</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tnc-popup custom-pop modal fade toggleTncDiv showEnglish ui-draggable" id="TNCMAcceptMsg" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ui-draggable-handle">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <h2></h2>
+                                <div class="tnc-detail scrollby" style="position:relative !important;">
+                                    <p class="ng-binding"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn positive go-ahead" ng-click="RedirectToLoginTNC();" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-pop modal fade ui-draggable" id="passwordChangeAlert" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content rounded ui-draggable-handle">
+                    <div class="modal-header">
+                        <img src="/Assets/img/transactionPassword-popup.svg">
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p class="ng-binding"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer rounded-bottom">
+                        <button type="button" class="btn positive" data-dismiss="modal" ng-click="DisableAlert();">I have noted</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="device-registration custom-pop modal fade enable-ent ui-draggable" id="DeviceRegester" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content rounded ui-draggable-handle ng-pristine ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" ng-form="DeviceRegester">
+                    <div class="modal-header">
+                        <img src="/Assets/img/device-popup.svg">
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="modal-title">Device Registration</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-center" ng-show="!isIVR">A One Time Password (OTP) for Device Registration has been sent to your mobile number and/or email address registered with HBL. Please enter the OTP below to continue using HBL Digital Banking on this device.</p>
+                                <p class="text-center ng-hide" ng-show="isIVR">A One Time Password (OTP) for Device Registration has been sent via call on your mobile number registered with HBL. Please enter the OTP below to continue using HBL Digital Banking on this device.</p>
+                                <div class="form">
+                                    <div class="form-group">
+                                        <span style="display: flex;font-size: 13px;background: #f2f2d6;">A One Time Password (OTP) has been sent on your registered mobile number and/or email address. Please enter OTP below. </span><div style="position:relative;"><label for="OneTimePassword">One Time Password </label>
+<input ng-model="postObj.otp" name="OneTimePassword" type="password" class="form-control forpassword ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength" ng-required="true" min="" max="" maxlength="" minlength="" id="txtPin" alt="" onkeypress="return setControlType(event)" ondragstart="return false" draggable="false" readonly="" onload="init()" ng-init="StopPaste('OneTimePassword')" autocomplete="off" ng-blur="DeviceRegester.OneTimePassword.ShowValidation=true" required="required">
+<div ng-messages="DeviceRegester.OneTimePassword.$error" style="text-align: left;" ng-show="DeviceRegester.Submited || DeviceRegester.OneTimePassword.ShowValidation" class="ValidationError otp-field  ng-active ng-hide"><!-- ngMessage: required --><p ng-message="required" class="ng-scope">This field is required</p>
+<!-- ngMessage: min -->
+<!-- ngMessage: minlength -->
+<!-- ngMessage: max -->
+<!-- ngMessage: maxlength -->
+</div>
+<div class="resendOtpDiv"><button type="button" class="btn" ng-click="postObj.otp='';ShowOTPHelpPopup3rdResend('de777ad1-38a6-49ce-b932-3e5e4d1ebb34'); SendOtp()" ng-disabled="Shared.clock!=0">Resend SMS</button><button type="button" class="btn " ng-click="ShowOTPHelpPopup3rdResend('de777ad1-38a6-49ce-b932-3e5e4d1ebb34'); sendIVRcall()" ng-disabled="Shared.clock!=0">Get A Call</button></div>
+<p class="msg"><!-- ngIf: Shared.clock!=0 --><!-- ngIf: Shared.clock==0 --><span ng-if="Shared.clock==0" style="font-weight:400" class="ng-scope">Please use the "Resend SMS" or "Get a Call" button if you did not receive OTP.<br> <b>Note</b>: In case your mobile number is ported to another network, type 'HBL' and send SMS to '9460'. You may re-attempt once confirmation message is received.</span><!-- end ngIf: Shared.clock==0 --><br>Having trouble in receiving OTP? <a href="" ng-click="ShowOTPHelpPopup('True');">Click Here </a></p><div ng-init="loadScript()" class="form-check form-check-inline eye-container eye-container-ivr "><input class="form-check-input" type="checkbox" id="showPin" value="option1"><label class="form-check-label open" for="inlineCheckbox1"><i class="open fa fa-eye"></i><i class="close fa fa-eye-slash"></i></label></div> </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ngIf: postObj.ErrorMessage!=null && !DisableMessage -->
+                    </div>
+                    <div class="modal-footer rounded-bottom">
+                        <button type="button" class="btn btn-default negative" data-dismiss="modal" ng-click="ClearFields();">Cancel</button>
+                        <button type="button" class="btn positive submit-btn" ng-click="DeviceRegester.Submited=true; !DeviceRegester.$invalid ?(DeviceRegistraion()):('')">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+<div class="custom-pop modal fade ui-draggable" id="coolOffPreMessagePopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content rounded ui-draggable-handle">
+            <header class="modal-header">
+                <img src="/Assets/img/disclaimer-green-popup.svg">
+            </header>
+            <div class="modal-body text-center">
+                <br>
+                <p class="ng-binding">
+                    To proceed with this request, HBL Digital will remain inaccessible for next 2-Hours.
+
+                    <br>
+                    <br>
+                    Please press “Next” to proceed
+                </p>
+            </div>
+            <div class="modal-footer rounded-bottom text-center">
+
+                
+                <a href="/" data-dismiss="" class="btn negative">
+                    Cancel
+                </a>
+
+                <a href="#" id="btnNext" class="btn positive" ng-click="coolOffNextBtnGenericActionEmittedHandler(coolOffScreenName)">Next</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+        
+<div class="custom-pop modal fade ui-draggable" id="SunsetPreMessagePopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content rounded ui-draggable-handle" style="width: 595px !important;">
+            <div class="modal-header">
+                <img src="/Assets/img/disclaimer-green-popup.svg">
+            </div>
+            <div class="modal-body text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="ng-binding">
+                            
+                        </p>
+                    </div>
+                    <div class="col-12 mt-4 mb-3">
+                        <h6 class="separator mx-auto"><span class="separator-span">Download HBL Mobile </span> </h6>
+
+                        <div id="divSunsetFallbackAppDownloadInfo" class="divSunsetFallbackAppDownloadInfo">
+                            <img src="/Assets/img/playstore.png">
+                            <a class="playstore" href="#" onclick="window.open('https://play.google.com/store/apps/details?id=com.hbl.android.hblmobilebanking&amp;hl=en')"> Google Play</a>
+                            &nbsp;&nbsp;
+                            <img src="/Assets/img/apple.png">
+                            <a class="apple" href="#" onclick="window.open('https://itunes.apple.com/pk/app/hbl-mobile/id1123585628?mt=8')">App Store</a>
+                            &nbsp;&nbsp;
+                            <img src="/Assets/img/huawei.png">
+                            <a class="huawei" href="#" onclick="window.open('https://appgallery.huawei.com/app/C101066241')">HUAWEI App Gallery</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer rounded-bottom text-center">
+
+                <a href="/" class="btn positive">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+    
+<div class="modal-backdrop fade show ng-hide" ng-show="$parent.ErrorMessage!=null" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;"></div>
+<div class="custom-pop fail modal fade  ui-draggable" ng-attr-style="{{$parent.ErrorMessage !=null?'display:block':''}}" id="popuperror" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="top: 40px;" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded ui-draggable-handle">
+            
+            <div class="modal-header">
+                <img src="/Assets/img/error-popup.svg">
+            </div>
+            <div class="modal-body text-center">
+                <!-- ngRepeat: x in $parent.ErrorMessage -->
+            </div>
+            <div class="modal-footer rounded-bottom">
+                <a ng-show="ResponseCode == 1396 || ResponseCode == 4004 || ResponseCode == 4006" href="#" class="btn negative ng-hide" data-dismiss="modal">Close</a>
+                <button type="button" ng-show="ResponseCode != 1396 &amp;&amp; ResponseCode != 4004 &amp;&amp; ResponseCode != 4006" ng-click="ErrorMessage=null;$parent.ErrorMessage=null;" class="btn negative ng-binding" data-dismiss="modal">Close</button>
+                <!-- ngIf: IsLock -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ngIf: $parent.ErrorMessage!=null -->
+    <div class="custom-pop modal fade tutorial ui-draggable" id="TutorailPoup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content rounded ui-draggable-handle">
+                <div class="modal-header">
+                    <img src="/Assets/img/tutorial-popup.svg">
+                </div>
+                <div class="modal-body">
+                    
+
+<script src="/AngularJsController/Tutorial/Index.js?1717619590"></script>
+<script>
+    var ismulti="";
+</script>
+<div ng-controller="TutorialController" ng-init="CheckLoad()" class="ng-scope">
+
+    
+    <div class="scrollby" style="height:400px; overflow-y:auto">
+        <!-- ngRepeat: data in TutorialData -->
+    </div>
+</div>
+
+
+                </div>
+                <div class="modal-footer rounded-bottom">
+                    <input type="button" data-dismiss="modal" value="Close" class="btn positive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-pop modal fade ui-draggable" id="OTPHelpPopupWithCall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded ui-draggable-handle">
+            <div class="modal-header">
+                <img src="HTTPS://www.hblibank.com.pk//Assets/img/info.svg">
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-title ng-binding"></h5>
+                <br>
+                <div ng-bind-html="Shared.loginResponse.otpAdvisoryWithCall" class="ng-binding"></div>
+            </div>
+            <div class="modal-footer rounded-bottom">
+                <a href="#" class="btn positive ng-binding" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="custom-pop modal fade showEnglish toggleTncDiv ui-draggable" id="successPopupWithCoolOff" name="successPopupWithCoolOff" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" datasqstyle="{&quot;top&quot;:null}" datasquuid="92e50dde-4978-4dc4-bf86-4fb7055b0312" datasqtop="40" style="top: 40px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content rounded ui-draggable-handle ng-pristine ng-valid" ng-form="starvalidate" style="background-color: #008269; color:#fff;">
+            
+
+            <div class="modal-body text-center text-white">
+                <img class="my-3" ng-src="HTTPS://www.hblibank.com.pk/Assets/img/info-green.svg" style="height:34px; width:34px;" src="HTTPS://www.hblibank.com.pk/Assets/img/info-green.svg">
+                <p class="text-white mb-4 ng-binding">
+                    HBL Digital Banking services will be available soon.
+                </p>                
+
+                <div id="divTimer" class="coolOffTimerDiv">
+                    <div>Time Left</div>
+                    <div class="ng-binding">00:00:00</div>
+                    <div class="row p-0 justify-content-around">
+                        <div>H</div>
+                        <div>M</div>
+                        <div>S</div>
+                    </div>
+                </div>
+
+                <a href="/Login" class="btn my-4" data-dismiss="" style="background-color: #fff; color: #008269;">Close</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'IACDIHHOLFJINECBBHMAJIGCIELAMBBJMJHFOFJFDJIALGNHPLAEIPLGENILCLEEDPGBGPNPMOIJBKLBDALAJKMBAOAPNBIMNECGBIFKMFKIMHIEAGACAOHEJKOMFDGK',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1126971304aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script><div id="sqseobar2" class="sqseobar2-white sqseobar2-horizontal"><div class="sqseobar2-inner"><img src="chrome-extension://akdgnmcogleenhbclghghlkkdndkjdjc/static/svg/seoquake-icon.svg" class="sqseobar2-logo"><a class="sqseobar2-link sqseobar2-reloadButton sqseobar2-item-hidden"><span>Load all parameters</span></a><div class="sqseobar2-parameters"><div class="sqmore-container" style="width: 485px;"><div class="sqseobar2-parameters-container"><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush Rank</span><span class="sqseobar2-parameterItemInline-title">Rank</span><a href="https://www.semrush.com/info/www.hblibank.com.pk?ref=174537735&amp;utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params" target="_blank" class="seoquake-params-request">764K</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush SE Traffic</span><span class="sqseobar2-parameterItemInline-title">Traffic</span><a href="https://www.semrush.com/info/www.hblibank.com.pk?ref=174537735&amp;utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params" target="_blank" class="seoquake-params-request">1.48K</a></div></div></div><button class="sqseobar2-button-more" style="visibility: hidden;">More data</button></div><div class="sqseobar2-right-container"><div class="sqseobar2-right-container-buttons"><a class="sqseobar2-link sqseobar2-link-pageinfo"><span>Summary report</span></a><a class="sqseobar2-link sqseobar2-link-diagnosis"><span>Diagnosis</span></a><a class="sqseobar2-link sqseobar2-link-density"><span>Density</span></a><a class="sqseobar2-link sqseobar2-link-external"><span>External links</span><span class="sqseobar2-link-value">4</span></a><a class="sqseobar2-link sqseobar2-link-internal"><span>Internal links</span><span class="sqseobar2-link-value">18</span></a><a class="sqseobar2-link sqseobar2-link-siteaudit" href="#"><span>Site audit</span><span class="sqseobar2-link-value">n/a</span></a></div><button class="sqseobar2-button-close" title="Close panel"></button><button class="sqseobar2-button-configure" title="Configure panel"></button></div></div></div><iframe src="https://mozbar.moz.com/bartender/third-party/start" style="display:none"></iframe>
+<div id="cb-connect-sidebar-main"><div id="cb-connect-sidebar"><a href="#" class="cb-connect-close-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path fill-rule="evenodd" d="M3.3352346,13.1409137 L3.33523455,13.1409138 C2.91548014,13.5733825 2.92546046,14.2645641 3.35752584,14.684707 C3.78087294,15.0963751 4.45458199,15.0962796 4.87780976,14.6844919 L9.00453522,10.5538595 L13.1373639,14.6904917 L13.1373638,14.6904917 C13.568947,15.1110906 14.2594594,15.1018597 14.6796682,14.6698737 C15.0920236,14.2459591 15.0919517,13.570408 14.6795052,13.1465834 L10.5469491,9.01016937 L14.6955806,4.85777412 L14.6955806,4.85777409 C15.1130468,4.423134 15.0994531,3.73205118 14.6652183,3.31419357 C14.2430237,2.90792372 13.5756331,2.90792372 13.1534407,3.31419361 L9.00453675,7.46620706 L4.86206292,3.31981159 L4.86206295,3.31981162 C4.436122,2.89342832 3.74549844,2.89339123 3.31951335,3.31972975 C2.89352771,3.74606833 2.89349066,4.43733659 3.31943155,4.86371935 L7.46206886,9.01011482 L3.3352346,13.1409137 Z" fill=""></path></svg></a><div id="cb-connect-sidebar-loading">
+        <div>
+          <div class="cb-connect-sidebar-loading-outer">
+            <div class="cb-connect-sidebar-loading-inner">
+              <img src="chrome-extension://pmnhcgfcafcnkbengdcanjablaabjplo/assets/logo-979a00aa.svg" width="40" height="40">
+              <div class="cb-connect-sidebar-loading-inner-text">Loading...</div>
+            </div>
+          </div>
+        </div>
+      </div><div><iframe id="cb-connect-sidebar-iframe" lang="en" class="cb-connect-sidebar-container" style="height: 100vh;"></iframe></div></div><div id="cb-connect-open-button-outer" class="cb-connect-open-button-is-tucked" style="inset: 544px 0px auto auto;"><div id="cb-connect-open-button-inner" style="background: rgb(20, 140, 252);">
+          <img src="chrome-extension://pmnhcgfcafcnkbengdcanjablaabjplo/assets/logo-dark-background-b8c98220.svg" width="20" height="20" style="user-select: none;width: 20px !important;height:20px !important;filter: none !important;">
+
+          <div id="cb-connect-open-button-icp-message" style="display: none;">ICP</div>
+        <div id="cb-connect-open-button-move-button"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4 12.5V11h12v1.5ZM4 9V7.5h12V9Z"></path></svg></div><a href="#" id="cb-connect-close-widget-button" title="Hide widget on this site or all sites"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path fill-rule="evenodd" d="M3.3352346,13.1409137 L3.33523455,13.1409138 C2.91548014,13.5733825 2.92546046,14.2645641 3.35752584,14.684707 C3.78087294,15.0963751 4.45458199,15.0962796 4.87780976,14.6844919 L9.00453522,10.5538595 L13.1373639,14.6904917 L13.1373638,14.6904917 C13.568947,15.1110906 14.2594594,15.1018597 14.6796682,14.6698737 C15.0920236,14.2459591 15.0919517,13.570408 14.6795052,13.1465834 L10.5469491,9.01016937 L14.6955806,4.85777412 L14.6955806,4.85777409 C15.1130468,4.423134 15.0994531,3.73205118 14.6652183,3.31419357 C14.2430237,2.90792372 13.5756331,2.90792372 13.1534407,3.31419361 L9.00453675,7.46620706 L4.86206292,3.31981159 L4.86206295,3.31981162 C4.436122,2.89342832 3.74549844,2.89339123 3.31951335,3.31972975 C2.89352771,3.74606833 2.89349066,4.43733659 3.31943155,4.86371935 L7.46206886,9.01011482 L3.3352346,13.1409137 Z" fill=""></path></svg></a></div></div></div></body></html>

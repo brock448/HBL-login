@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-error-popup">
+      <rect width="60" height="60"/>
+    </clipPath>
+  </defs>
+  <g id="error-popup" clip-path="url(#clip-error-popup)">
+    <g id="Group_28663" data-name="Group 28663" transform="translate(-206.972 -606.881)">
+      <g id="Group_28595" data-name="Group 28595" transform="translate(208.262 608.17)">
+        <circle id="Ellipse_820" data-name="Ellipse 820" cx="28.711" cy="28.711" r="28.711" fill="#b75858"/>
+      </g>
+      <g id="Group_28596" data-name="Group 28596" transform="translate(222.314 622.222)">
+        <path id="Line_1103" data-name="Line 1103" d="M1.094,28.317A2.094,2.094,0,0,1-.387,24.742L24.742-.387A2.094,2.094,0,0,1,27.7,2.575L2.575,27.7A2.087,2.087,0,0,1,1.094,28.317Z" transform="translate(1 1)" fill="#fff"/>
+        <path id="Line_1104" data-name="Line 1104" d="M26.223,28.317a2.087,2.087,0,0,1-1.481-.613L-.387,2.575A2.094,2.094,0,0,1,2.575-.387L27.7,24.742a2.094,2.094,0,0,1-1.481,3.575Z" transform="translate(1 1)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

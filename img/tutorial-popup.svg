@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="tutorial-popup" transform="translate(-430 -6206)">
+    <rect id="Rectangle_1849" data-name="Rectangle 1849" width="60" height="60" transform="translate(430 6206)" fill="#fff" opacity="0"/>
+    <path id="Path_23901" data-name="Path 23901" d="M28.25,0A28.25,28.25,0,1,1,0,28.25,28.25,28.25,0,0,1,28.25,0Z" transform="translate(432 6208)" fill="#008269"/>
+    <g id="Path_35593" data-name="Path 35593" transform="translate(475.667 6224) rotate(90)" fill="none" stroke-linecap="round">
+      <path d="M12.333,0,24.667,24.667H0Z" stroke="none"/>
+      <path d="M 12.33349609375 5.366565704345703 L 3.883281707763672 22.26699638366699 L 20.78371047973633 22.26699638366699 L 12.33349609375 5.366565704345703 M 12.33349609375 -3.814697265625e-06 L 24.66699600219727 24.66699600219727 L -3.814697265625e-06 24.66699600219727 L 12.33349609375 -3.814697265625e-06 Z" stroke="none" fill="#fff"/>
+    </g>
+  </g>
+</svg>
